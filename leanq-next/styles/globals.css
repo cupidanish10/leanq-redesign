@@ -241,7 +241,8 @@ a:focus,
   top: 0px;
   background: linear-gradient(180deg, rgba(78, 187, 135, 0.1) 12.84%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
-  height: 400px;
+  height: 40vh;
+  z-index: -1;
 }
 
 /*hero section */
@@ -594,6 +595,7 @@ body[titles="Services"] #horizontal-fullpage .fixed-content {
 .section {
   position: relative;
   background-color: #fff;
+  z-index: 1;
 }
 
 .section > .section-inner {

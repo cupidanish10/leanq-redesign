@@ -5,6 +5,16 @@ const NoFullScroll = (props) => {
     const topNav = document.getElementById("top-nav-js");
     const sections = document.querySelectorAll(".section");
     document.addEventListener("scroll", () => {
+
+       //making nav transparent if it is in the top
+       if( topNav.getBoundingClientRect().top == 0){
+        document.getElementById("color-nav").classList.add("bg-transparent")
+      }else{
+        document.getElementById("color-nav").classList.remove("bg-transparent")
+
+      }
+      
+      //checking scroll on section to change nave color
       sections.forEach((section) => {
         console.log(section.getBoundingClientRect().top);
         if (section.getBoundingClientRect().top <= 5) {

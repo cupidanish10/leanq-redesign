@@ -24,7 +24,7 @@ const VerticalScrollElementLayout = (props) => {
             }
           } else {
             entry.target.classList.replace("fadeIn", "fadeOut");
-            entry.target.classList.remove("inView")
+            entry.target.classList.remove("inView");
           }
         });
       },
