@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Lottie from "lottie-react";
 import patternAnimation from "../js/lottie/homepage.json";
@@ -7,6 +7,12 @@ import CategorySlider from "../components/CategorySlider";
 import VerticalScrollElementLayout from "../components/VerticalScrollElementLayout";
 import ReactFullpage from "@fullpage/react-fullpage";
 export default function Home() {
+  useEffect(() => {
+    document.body.setAttribute("titles", "Home");
+
+   
+  }, []);
+
   return (
     <ReactFullpage
       onLeave={(origin, destination, direction) => {
@@ -15,11 +21,9 @@ export default function Home() {
       responsiveWidth={800}
       render={({ state, fullpageApi }) => {
         if (fullpageApi?.getScrollY() > 100) {
-          typeof window != "undefined" &&
-            document.getElementById("fullpage").classList.add("bottom-0");
+          typeof window != "undefined" && document.getElementById("fullpage")?.classList?.add("bottom-0");
         } else {
-          typeof window != "undefined" &&
-            document.getElementById("fullpage").classList.remove("bottom-0");
+          typeof window != "undefined" && document.getElementById("fullpage")?.classList?.remove("bottom-0");
         }
 
         return (
@@ -38,6 +42,7 @@ export default function Home() {
               data-theme="white"
               className="section hero main"
             >
+               <div className="fixed-gradient"></div>
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-md-12">
@@ -167,7 +172,7 @@ export default function Home() {
             <section
               id="section-4"
               data-theme="white"
-              className="section main function-section fade fadeOut"
+              className="section main function-section"
             >
               <div className="container">
                 <div className="row  align-items-center">
@@ -256,7 +261,7 @@ export default function Home() {
             <section
               id="section-5"
               data-theme="white"
-              className="section main clients-section fade fadeOut"
+              className="section main clients-section"
             >
               <div className="container">
                 <div className="row  align-items-center">
@@ -392,7 +397,7 @@ export default function Home() {
 
             <Footer className="section" />
 
-            <div className="fixed-gradient"></div>
+           
           </VerticalScrollElementLayout>
         );
       }}

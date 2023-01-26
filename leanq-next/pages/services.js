@@ -14,7 +14,7 @@ import HorizontalScrollElementLayout from "../components/HorizontalScrollElement
 
 const Services = () => {
   useEffect(() => {
-    document.body.setAttribute("title", "Services");
+    document.body.setAttribute("titles", "Services");
   }, []);
   return (
     <HorizontalScrollElementLayout>

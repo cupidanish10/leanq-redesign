@@ -9,7 +9,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    document.body.setAttribute("title", "Blogs");
+    document.body.setAttribute("titles", "Blogs");
     (async () => {
       const blogResponse = await callApi(URL_LIST.blogList);
       setBlogs(blogResponse.data);

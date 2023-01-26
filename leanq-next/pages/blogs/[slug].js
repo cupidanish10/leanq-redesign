@@ -11,7 +11,7 @@ const BlogDetails = () => {
     const {slug} = router.query;
 
     useEffect(()=>{
-      document.body.setAttribute("title", "BlogDetails");
+      document.body.setAttribute("titles", "BlogDetails");
       ( async ()=> {
         console.log("carrer detail query ", URL_LIST.careerDetail(slug))
         if(slug){

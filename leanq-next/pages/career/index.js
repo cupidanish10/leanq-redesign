@@ -8,7 +8,7 @@ import { callApi } from "../../utils/httpreq";
 const Career = () => {
   const [career, setCareers] = useState([]);
   useEffect(() => {
-    document.body.setAttribute("title", "Career");
+    document.body.setAttribute("titles", "Career");
     (async () => {
       const careerResponse = await callApi(URL_LIST.careerList);
       setCareers(careerResponse.data);

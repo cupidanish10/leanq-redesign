@@ -36,6 +36,7 @@ const Contact = () => {
     <NoFullScroll>
       <main>
         <section data-theme="white" className="section">
+        <div className="fixed-gradient"></div>
           <div class="container">
             <div class="row flex-100 align-items-center">
               <div class="col-md-12">

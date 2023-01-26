@@ -6,7 +6,7 @@ import NoFullScroll from "../components/NoFullScroll"
 
 const Work = () => {
   useEffect(() => {
-    document.body.setAttribute("title", "Works");
+    document.body.setAttribute("titles", "Works");
   }, []);
 
   const [works, setWorks] = useState([]);

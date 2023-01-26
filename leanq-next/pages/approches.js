@@ -5,7 +5,7 @@ import HorizontalScrollElementLayout from "../components/HorizontalScrollElement
 
 const Approches = () => {
   useEffect(() => {
-    document.body.setAttribute("title", "Approaches");
+    document.body.setAttribute("titles", "Approaches");
   }, []);
   return (
     <>

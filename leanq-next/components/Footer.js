@@ -14,11 +14,11 @@ const Footer = ()=> {
                                     product </h2>
                             </div>
         
-                            {/* <div className="col-md-6">
+                            <div className="col-md-6">
                                 <div className="d-flex justify-content-end">
                                     <img src="img/d-logo.svg" style={{height:"70px"}} className="img-fluid" alt="" />
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
         
                         <div className="row">

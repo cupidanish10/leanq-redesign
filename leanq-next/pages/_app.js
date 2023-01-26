@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 
   if (typeof window != "undefined") {
     console.log("window ");
-    $(document.body).attr("title", $("head title").html());
+    // $(document.body).attr("title", $("head title").html());
 
     $(".hamburger-icon").on("click", function (e) {
       $(".mobile-menu").toggleClass("toggle-nav"); //you can list several class names
