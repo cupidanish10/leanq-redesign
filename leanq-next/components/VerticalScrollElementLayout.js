@@ -8,6 +8,7 @@ const VerticalScrollElementLayout = (props) => {
       (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            entry.target.classList.add("inView")
             let currentTheme = Theme[entry.target.dataset.theme];
             if (currentTheme) {
               if (entry.target.dataset.circle == "hide") {
@@ -23,6 +24,7 @@ const VerticalScrollElementLayout = (props) => {
             }
           } else {
             entry.target.classList.replace("fadeIn", "fadeOut");
+            entry.target.classList.remove("inView")
           }
         });
       },
