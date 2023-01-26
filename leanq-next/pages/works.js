@@ -27,6 +27,7 @@ const Work = () => {
     <NoFullScroll>
       <main>
         <section data-theme="white" className="main work-section section bg-white">
+        <div class="fixed-gradient"></div>
           <div className="container">
             <div className="row align-items-center mt-5">
               <div className="col-md-12">

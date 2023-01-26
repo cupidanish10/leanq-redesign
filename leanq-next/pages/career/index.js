@@ -21,6 +21,7 @@ const Career = () => {
         data-theme="white"
         className="main work-section section bg-white extra-top-padding"
       >
+         <div class="fixed-gradient"></div>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -70,7 +71,7 @@ const Career = () => {
       </section>
 
       <Footer />
-      <div class="fixed-gradient"></div>
+     
     </NoFullScroll>
   );
 };

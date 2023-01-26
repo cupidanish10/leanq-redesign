@@ -754,6 +754,10 @@ body[titles="Services"]:after {
   bottom: -56px;
   right: -239px;
 }
+
+body[titles="Services"] .section {
+  z-index: unset;
+}
 .hide:after {
   visibility: hidden;
 }

@@ -21,6 +21,7 @@ const Blogs = () => {
         data-theme="white"
         className="main blog-section section bg-white extra-top-padding"
       >
+        <div class="fixed-gradient"></div>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -78,7 +79,7 @@ const Blogs = () => {
 
       <Footer />
 
-      <div class="fixed-gradient"></div>
+      
     </NoFullScroll>
   );
 };
