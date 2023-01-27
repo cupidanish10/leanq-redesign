@@ -14,16 +14,30 @@ const About = () => {
       console.log( "atrs",destination.item.attributes)
       let attr = destination.item.attributes[1].nodeValue;
 
-      if (attr == "white") {
-        document.body.style.background = "#fff";
-      }
+      if (window.innerWidth > 997) {
+        if (attr == "white") {
+          document.body.style.background = "#fff";
+        }
 
-      if (attr == "black") {
-        document.body.style.background = "#212529";
+        if (attr == "black") {
+          document.body.style.background = "#212529";
+        }
+
       }
       
     }}
-    render={({ state, fullpageApi }) => {
+
+    responsiveWidth={900}
+
+     render={(data) => {
+        const { state, fullpageApi, destination, origin } = data;
+        console.log("state", origin)
+        fullpageApi?.setKeyboardScrolling(true);
+        if (fullpageApi?.getScrollY() > 100) {
+          typeof window != "undefined" && document.getElementById("fullpage")?.classList?.add("bottom-0");
+        } else {
+          typeof window != "undefined" && document.getElementById("fullpage")?.classList?.remove("bottom-0");
+        }
       return (
         <VerticalScrollElementLayout>
           <main id="fullpage">
@@ -118,7 +132,7 @@ const About = () => {
               </div>
             </section>
   
-            <section  id="section-2" data-theme="black" className="section about-cards">
+            <section  id="section-2" data-theme="black" className="section about-cards mobile-bg-dark">
               <div className="">
               <div className="container">
                 <div className="row align-items-center">
@@ -234,7 +248,7 @@ const About = () => {
               </div>
             </section>
   
-            <Footer className="section hp-footer" />
+            <Footer className="section hp-footer mobile-bg-dark" />
           </main>
         </VerticalScrollElementLayout>
 

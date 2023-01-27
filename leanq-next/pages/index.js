@@ -86,7 +86,7 @@ export default function Home({ categories }) {
                 <div className="row align-items-center">
                   <div className="col-md-12">
                     <div className="row">
-                      <div className="col-md-10">
+                      <div className="col-md-11">
                         <div className="hero-content">
                           <h5>And Reliable Services </h5>
                           <h1>
@@ -97,9 +97,9 @@ export default function Home({ categories }) {
                               <span className="text-brand">
                                 <span className="rotate-30">e</span>
                               </span>
-                              house with Strong
+                              house
                             </span>{" "}
-                            Business Acumen
+                             with Strong Business Acumen
                           </h1>
                         </div>
                       </div>
@@ -112,7 +112,7 @@ export default function Home({ categories }) {
             <section
               id="section-2"
               data-theme="black"
-              className="section main-md  work-section section"
+              className="section main-md  work-section section mobile-bg-dark"
             >
               <div className="container">
                 <div className="">
@@ -126,7 +126,7 @@ export default function Home({ categories }) {
             <section
               id="section-3"
               data-theme="black"
-              className="section  main  work-section"
+              className="section  main  work-section mobile-bg-dark"
             >
               <div className="container">
                 <div className="row  align-items-center">
@@ -266,7 +266,7 @@ export default function Home({ categories }) {
                           <div className="function-item">
                             <h5>
                               {" "}
-                              <span className="text-brand">A</span> ct on MVP
+                              <span className="text-brand">A</span>ct on MVP
                               service delivery{" "}
                             </h5>
                             <p>

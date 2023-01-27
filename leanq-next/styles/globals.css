@@ -1148,6 +1148,19 @@ figcaption {
 }
 
 @media only screen and (max-width: 979px) {
+
+  .mobile-bg-dark {
+    background: var(--dark);
+  }
+
+  #fullpage .mobile-bg-dark .abs-slider-item h5 {
+    color: #fff;
+  }
+
+  .overlay-card {
+    height: auto!important;
+  }
+
   #section-1 {
     padding-bottom: 5vh;
 }
