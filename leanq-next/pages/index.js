@@ -28,7 +28,6 @@ export default function Home() {
   return (
   
     <ReactFullpage className="hp-section"
-    keyboardScrolling= {true}
       onLeave={(origin, destination, direction) => {
         console.log("des" ,destination);
         
@@ -52,8 +51,10 @@ export default function Home() {
       }}
       
       responsiveWidth={900}
-      render={({ state, fullpageApi }) => {
-        console.log(fullpageApi);
+      render={(data) => {
+        const { state, fullpageApi, destination, origin } = data;
+        console.log("state", origin)
+        fullpageApi?.setKeyboardScrolling(true);
         if (fullpageApi?.getScrollY() > 100) {
           typeof window != "undefined" && document.getElementById("fullpage")?.classList?.add("bottom-0");
         } else {

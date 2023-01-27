@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Theme from "../constants/url.theme";
 
 const VerticalScrollElementLayout = (props) => {
@@ -34,6 +34,7 @@ const VerticalScrollElementLayout = (props) => {
       observer.observe(section);
     });
   }, []);
+
   return <>{props.children}</>;
 };
 export default VerticalScrollElementLayout;
