@@ -82,7 +82,7 @@ const About = () => {
                             className=""
                             alt="A windmill"
                           />
-                          <figcaption></figcaption>
+                          
                         </figure>
                         <figure>
                           <img
@@ -90,7 +90,7 @@ const About = () => {
                             className=""
                             alt="The Clifton Suspension Bridge"
                           />
-                          <figcaption></figcaption>
+                          
                         </figure>
                         <figure>
                           <img
@@ -98,7 +98,7 @@ const About = () => {
                             className=""
                             alt="Sunset and boats"
                           />
-                          <figcaption></figcaption>
+                          
                         </figure>
                         <figure>
                           <img
@@ -106,7 +106,7 @@ const About = () => {
                             className=""
                             alt="a river in the snow"
                           />
-                          <figcaption></figcaption>
+                          
                         </figure>
                         <figure>
                           <img
@@ -114,7 +114,7 @@ const About = () => {
                             className=""
                             alt="a single checked balloon"
                           />
-                          <figcaption></figcaption>
+                          
                         </figure>
                         <figure>
                           <img
@@ -122,7 +122,7 @@ const About = () => {
                             className=""
                             alt="a hot air balloon shaped like a dog"
                           />
-                          <figcaption></figcaption>
+                          
                         </figure>
                       </div>
                     </div>

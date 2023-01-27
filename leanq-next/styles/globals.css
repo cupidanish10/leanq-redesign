@@ -1081,6 +1081,20 @@ figcaption {
 
 
 @media only screen and (min-width: 990px) and (max-width: 1400px) {
+  .circle-black #fullpage .abs-slider-item .work-slider .slick-prev {
+    content: url("../public/img/arrow-left-black.svg");
+}
+  .circle-black #fullpage .abs-slider-item .work-slider .slick-next {
+    content: url("../public/img/arrow-right-black.svg");
+}
+
+  .work-slider .slick-prev {
+    left: 870px;
+  }
+  .work-slider .slick-next {
+    left: 900px;
+  }
+
   .lottie-sm svg {
     width: 500px !important;
     height: 300px !important;
@@ -1134,11 +1148,13 @@ figcaption {
   }
 
   .masorny-gallery {
-    column-gap: 177px;
+    column-gap: 120px;
+    padding-left: 0!important;
   }
 
   figure > img {
     width: 156px;
+    height: 225px;
   }
 
   .team-list img {
@@ -1148,6 +1164,8 @@ figcaption {
 }
 
 @media only screen and (max-width: 979px) {
+
+
 
   .mobile-bg-dark {
     background: var(--dark);
