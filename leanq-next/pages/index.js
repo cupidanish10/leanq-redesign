@@ -21,6 +21,7 @@ export default function Home() {
 
   return (
     <ReactFullpage className="hp-section"
+    keyboardScrolling= {true}
       onLeave={(origin, destination, direction) => {
         console.log("des" ,destination);
         
@@ -75,7 +76,7 @@ export default function Home() {
                     <div className="row">
                       <div className="col-md-10">
                         <div className="hero-content">
-                          <h5>Build.Better.Tech </h5>
+                          <h5>And Reliable Services </h5>
                           <h1>
                             {" "}
                             A Soft{" "}
@@ -84,9 +85,9 @@ export default function Home() {
                               <span className="text-brand">
                                 <span className="rotate-30">e</span>
                               </span>
-                              house
+                              house with Strong
                             </span>{" "}
-                            That Grows With Your Business
+                            Business Acumen 
                           </h1>
                         </div>
                       </div>
@@ -121,12 +122,11 @@ export default function Home() {
                     <div className="row mb-5 mt-5">
                       <div className="col-md-10">
                         <h2>
-                          We d
+                          We D
                           <span className="text-brand">
                             <span className="rotate-30 movetext">e</span>
                           </span>
-                          sign better software solutions to build and grow your
-                          API driven business.
+                          sign, Build, and Integrate Data-Driven Software and User Experiences
                         </h2>
                       </div>
                     </div>
@@ -135,7 +135,7 @@ export default function Home() {
                       <div className="col-md-3 col-6">
                         <div className="service-list text-center">
                           <img src="img/icons/api.svg" alt="api" />
-                          <h4> API's</h4>
+                          <h4> API Integration </h4>
                         </div>
                       </div>
                       <div className="col-md-3 col-6">
@@ -150,19 +150,19 @@ export default function Home() {
                       <div className="col-md-3 col-6">
                         <div className="service-list text-center">
                           <img src="img/icons/mvp.svg" alt="api" />
-                          <h4> MVP</h4>
+                          <h4> MVP Launch</h4>
                         </div>
                       </div>
                       <div className="col-md-3 col-6">
                         <div className="service-list text-center">
                           <img src="img/icons/web-app.svg" alt="api" />
-                          <h4> Web Application</h4>
+                          <h4>Custom Web Apps</h4>
                         </div>
                       </div>
                       <div className="col-md-3 col-6">
                         <div className="service-list text-center">
                           <img src="img/icons/maintainance.svg" alt="api" />
-                          <h4> Maintainance</h4>
+                          <h4>Software Maintenance</h4>
                         </div>
                       </div>
                       <div className="col-md-3 col-6">
@@ -171,7 +171,7 @@ export default function Home() {
                             src="img/icons/business-automation.svg"
                             alt="api"
                           />
-                          <h4> Business Automation </h4>
+                          <h4> Business Process Automation </h4>
                         </div>
                       </div>
                       <div className="col-md-3 col-6">
@@ -180,7 +180,7 @@ export default function Home() {
                             src="img/icons/mobile-application.svg"
                             alt="api"
                           />
-                          <h4> Mobile App </h4>
+                          <h4> Mobile Apps </h4>
                         </div>
                       </div>
                       <div className="col-md-3  col-6">
@@ -206,12 +206,11 @@ export default function Home() {
                     <div className="row mb-5">
                       <div className="col-md-10">
                         <h2 className="m-0">
-                          We start d
+                         Discov
                           <span className="text-brand">
                             <span className="rotate-30">e</span>
                           </span>
-                          velopment from the minimum necessary functions instead
-                          of making it all at once.
+                          r Your North Star
                         </h2>
                       </div>
                     </div>
@@ -234,47 +233,41 @@ export default function Home() {
                           <div className="function-item">
                             <h5>
                               {" "}
-                              <span className="text-brand">L</span>aunch a MVP
+                              <span className="text-brand">L</span>iberate Unnecessary Functions
                             </h5>
                             <p>
                               {" "}
-                              We create a business model for your growth. Only
-                              focus on making things that generate the outcomes
-                              that we want.
+                              We omit redundant functions to save you time and money. Plan a product with only essential functions(or KPIs)
                             </p>
                           </div>
                           <div className="function-item">
                             <h5>
                               {" "}
-                              <span className="text-brand">E</span>mpathize your
+                              <span className="text-brand">E</span>mpathize with your
                               users{" "}
                             </h5>
                             <p>
                               {" "}
-                              We bring the true nature of a product to life
-                              faster, in a collaborative, cross-functional and
-                              user centric way.
+                              We devise your product in a cross-functional and user-centric way to meet your users’ perspectives, needs, and motivations. (innovate)
                             </p>
                           </div>
                           <div className="function-item">
                             <h5>
                               {" "}
-                              <span className="text-brand">A</span>utomate your
+                              <span className="text-brand">A</span> ct on MVP
                               service delivery{" "}
                             </h5>
                             <p>
                               {" "}
-                              Improve disciplines to achieve both speed and
-                              direction towards its strategic goal.
+                              We create a minimal viable product with just enough essential features for you to test the concept, provide feedback and validate the product idea. 
                             </p>
                           </div>
                           <div className="function-item">
                             <h5>
                               {" "}
-                              i<span className="text-brand">N</span>novate and
-                              grow{" "}
+                              <span className="text-brand">N</span>urture your Growth{" "}
                             </h5>
-                            <p> Keep growing with LEAN.</p>
+                            <p>We will aid you in product maintenance as long as you need us. You can keep growing with LEAN. (continuous) </p>
                           </div>
                         </div>
                       </div>
@@ -295,12 +288,11 @@ export default function Home() {
                     <div className="row mb-5">
                       <div className="col-md-10">
                         <h2 className="m-0">
-                          Our cli
+                        Achi
                           <span className="text-brand">
                             <span className="rotate-30">e</span>
                           </span>
-                          nts and collaborators. Our fascination for innovation
-                          is mutual. We pride on our enthusiasm to do more.
+                          ve Your KPIs with Our Technical Expertise
                         </h2>
                       </div>
                     </div>
@@ -309,7 +301,7 @@ export default function Home() {
                       <div className="col-md-3 col-4">
                         <div className="client-logo">
                           <img
-                            src="img/clients/ontraport.png"
+                            src="img/clients/figma.png"
                             className="img-fluid"
                             alt=""
                           />
@@ -328,7 +320,7 @@ export default function Home() {
                       <div className="col-md-3 col-4">
                         <div className="client-logo  text-center">
                           <img
-                            src="img/clients/mongodb.png"
+                            src="img/clients/android.png"
                             className="img-fluid"
                             alt=""
                           />
@@ -337,7 +329,7 @@ export default function Home() {
                       <div className="col-md-3 col-4">
                         <div className="client-logo text-end">
                           <img
-                            src="img/clients/figma.png"
+                            src="img/clients/ontraport.png"
                             className="img-fluid"
                             alt=""
                           />
@@ -382,7 +374,7 @@ export default function Home() {
                       <div className="col-md-3 col-4">
                         <div className="client-logo">
                           <img
-                            src="img/clients/js.png"
+                            src="img/clients/php.png"
                             className="img-fluid"
                             alt=""
                           />
@@ -391,7 +383,7 @@ export default function Home() {
                       <div className="col-md-3 col-4">
                         <div className="client-logo text-center">
                           <img
-                            src="img/clients/mysql.png"
+                            src="img/clients/flutter.png"
                             className="img-fluid"
                             alt=""
                           />
@@ -409,7 +401,7 @@ export default function Home() {
                       <div className="col-md-3 col-4">
                         <div className="client-logo text-end">
                           <img
-                            src="img/clients/html.png"
+                            src="img/clients/googleanalytics.png"
                             className="img-fluid"
                             alt=""
                           />

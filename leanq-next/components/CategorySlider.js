@@ -89,7 +89,7 @@ export default function CategorySlider( props ) {
     <>
      <div className="row mb-3  mt-5">
                     <div className="col-md-12">
-                        <h5>Take a look at  what we’ve created </h5>
+                        <h5> Explore our works in digital transformation (Dx) </h5>
                     </div>
                 </div>
                 <div className="row">

@@ -53,25 +53,25 @@ const Footer = ()=> {
                                     <h3> Services </h3>
                                     <ul className="list-unstyled">
                                         <li>
-                                            <a href="/services.html#api"> API's </a>
+                                            <a href="/services.html#api"> API Integraation </a>
                                         </li>
                                         <li>
                                             <a href="/services#monolith"> Monolith to Microservices </a>
                                         </li>
                                         <li>
-                                            <a href="/services#mvp"> MVP </a>
+                                            <a href="/services#mvp"> MVP Launch </a>
                                         </li>
                                         <li>
-                                            <a href="/services#web-app"> Web Application </a>
+                                            <a href="/services#web-app"> Custom Web Apps</a>
                                         </li>
                                         <li>
-                                            <a href="/services#maintainance"> Maintainance </a>
+                                            <a href="/services#maintainance"> Software Maintenance </a>
                                         </li>
                                         <li>
-                                            <a href="/services#business-automation"> Business Automation </a>
+                                            <a href="/services#business-automation"> Business Process Automation </a>
                                         </li>
                                         <li>
-                                            <a href="/services#mobile-app"> Mobile App </a>
+                                            <a href="/services#mobile-app"> Mobile Apps </a>
                                         </li>
                                         <li>
                                             <a href="/services#cloud-services"> Cloud Services </a>
