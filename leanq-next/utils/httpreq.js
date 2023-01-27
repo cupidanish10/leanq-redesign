@@ -8,9 +8,9 @@ const getUrl = (url) => {
 
 // get last index element o string in javascript
 export const callApi = (url, method = "get", data = {}, formData) => {
-  let token = JSON.parse(
-    JSON.parse(localStorage.getItem("persist:root"))?.user || "{}"
-  )?.token;
+  // let token = JSON.parse(
+  //   JSON.parse(localStorage.getItem("persist:root"))?.user || "{}"
+  // )?.token;
   return new Promise((resolve, reject) => {
     let headers = {
       "Content-Type": "application/json",
@@ -21,9 +21,9 @@ export const callApi = (url, method = "get", data = {}, formData) => {
       };
     }
    
-    if (token) {
-      headers["Authorization"] = `Bearer ${token}`;
-    }
+    // if (token) {
+    //   headers["Authorization"] = `Bearer ${token}`;
+    // }
 
     return axios({
       method: method,
