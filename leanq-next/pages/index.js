@@ -6,20 +6,46 @@ import Footer from "../components/Footer";
 import CategorySlider from "../components/CategorySlider";
 import VerticalScrollElementLayout from "../components/VerticalScrollElementLayout";
 import ReactFullpage from "@fullpage/react-fullpage";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Home() {
   useEffect(() => {
     document.body.setAttribute("titles", "Home");
+     AOS.init({
+      disable: 'mobile'
+    });
 
+      AOS.refresh();
    
   }, []);
 
   return (
-    <ReactFullpage
+    <ReactFullpage className="hp-section"
       onLeave={(origin, destination, direction) => {
-        console.log("on leave event", destination);
+        console.log("des" ,destination);
+        
+        console.log( "atrs",destination.item.attributes)
+        let attr = destination.item.attributes[1].nodeValue;
+
+        
+
+        if ( window.innerWidth > 997) {
+          if (attr == "white") {
+            document.body.style.background = "#fff";
+          }
+  
+          if (attr == "black") {
+            document.body.style.background = "#212529";
+          }
+
+        }
+
+        
       }}
-      responsiveWidth={800}
+      
+      responsiveWidth={900}
       render={({ state, fullpageApi }) => {
+        console.log(fullpageApi);
         if (fullpageApi?.getScrollY() > 100) {
           typeof window != "undefined" && document.getElementById("fullpage")?.classList?.add("bottom-0");
         } else {
@@ -73,7 +99,7 @@ export default function Home() {
             <section
               id="section-2"
               data-theme="black"
-              className="section bg-dark  main-md  work-section section"
+              className="section main-md  work-section section"
             >
               <div className="container">
                 <div className="">
@@ -87,12 +113,12 @@ export default function Home() {
             <section
               id="section-3"
               data-theme="black"
-              className="section bg-dark  main  work-section"
+              className="section  main  work-section"
             >
               <div className="container">
                 <div className="row  align-items-center">
                   <div className="col-md-12">
-                    <div className="row mb-5  mt-5">
+                    <div className="row mb-5 mt-5">
                       <div className="col-md-10">
                         <h2>
                           We d
@@ -395,7 +421,7 @@ export default function Home() {
               </div>
             </section>
 
-            <Footer className="section" />
+            <Footer className="section hp-footer" />
 
            
           </VerticalScrollElementLayout>

@@ -8,11 +8,26 @@ const About = () => {
 },[])
   return (
     <ReactFullpage
+    onLeave={(origin, destination, direction) => {
+      console.log("des" ,destination);
+      
+      console.log( "atrs",destination.item.attributes)
+      let attr = destination.item.attributes[1].nodeValue;
+
+      if (attr == "white") {
+        document.body.style.background = "#fff";
+      }
+
+      if (attr == "black") {
+        document.body.style.background = "#212529";
+      }
+      
+    }}
     render={({ state, fullpageApi }) => {
       return (
         <VerticalScrollElementLayout>
           <main id="fullpage">
-            <section data-theme="white" className="about-hero bg-white section">
+            <section  id="section-0" data-theme="white" className="about-hero section">
             <div className="fixed-gradient"></div>
               <div className="">
                 <div className="container">
@@ -103,7 +118,7 @@ const About = () => {
               </div>
             </section>
   
-            <section data-theme="black" className="section bg-dark about-cards">
+            <section  id="section-2" data-theme="black" className="section about-cards">
               <div className="">
               <div className="container">
                 <div className="row align-items-center">
@@ -166,7 +181,7 @@ const About = () => {
               </div>
             </section>
   
-            <section data-theme="white" className="section bg-white about-cards">
+            <section  id="section-3" data-theme="white" className="section about-cards">
               <div className="">
               <div className="container">
                 <div className="row align-items-center">
@@ -219,7 +234,7 @@ const About = () => {
               </div>
             </section>
   
-            <Footer/>
+            <Footer className="section hp-footer" />
           </main>
         </VerticalScrollElementLayout>
 

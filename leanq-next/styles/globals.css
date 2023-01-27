@@ -78,6 +78,7 @@ body {
   font-size: var(--brand-text) !important;
   font-weight: 400 !important;
   position: relative;
+  transition: background 1s ease;
 }
 
 .section::-webkit-scrollbar {
@@ -589,12 +590,12 @@ body[titles="Services"] #horizontal-fullpage .fixed-content {
   color: var(--dark);
 }
 #brand-logo path {
-  transition: all 0.3s ease-out;
+  transition: all 1s ease-out;
 }
 
 .section {
   position: relative;
-  background-color: #fff;
+  /* background-color: #fff; */
   z-index: 1;
 }
 
@@ -1075,6 +1076,10 @@ figcaption {
 #top-nav-js.black #color-nav, #top-nav-js.white #color-nav{
   transition: .2s all;
 }
+
+
+
+
 @media only screen and (min-width: 990px) and (max-width: 1400px) {
   .lottie-sm svg {
     width: 500px !important;
@@ -1143,6 +1148,10 @@ figcaption {
 }
 
 @media only screen and (max-width: 979px) {
+  #section-1 {
+    padding-bottom: 5vh;
+}
+
   .main-md {
     padding-top: var(--padding-sm);
     padding-bottom: var(--padding-sm);
@@ -1487,21 +1496,46 @@ figcaption {
 } */
 
 .abs-slider {
-  position: relative;
-  height: 602px;
+  /* position: relative;
+  height: 602px; */
 }
 
-.abs-slider-item {
-  position: absolute; 
-  bottom: calc(100% - 25vh); 
-  transition: all .3s ease;
+@media (min-width: 900px) {
+  .abs-slider-item {
+    position: absolute; 
+    bottom: calc(100% - 25vh); 
+    transition: all 1s ease;
+  }
+  
+  #fullpage.bottom-0 .abs-slider-item {
+    
+    bottom: 50%;
+    transform: translateY(50%);
+    
+  }
+/*   
+  #fullpage .section{
+    position: relative;
+    top: 70px; 
+    transition: all 1s ease;
+  }
+
+  #fullpage .inView.section  {
+    top: 0%;
+   
+  } */
 }
 
-#fullpage.bottom-0 .abs-slider-item {
-  
-  bottom: 0;
-  
+.hp-footer {
+  background: transparent;
 }
+
+.fullpage-wrapper footer, .fullpage-wrapper .bg-dark {
+  background: transparent!important;
+  background-color: transparent!important;
+}
+
+
 
 #fullpage .abs-slider-item h5 {
   color: #002d48;
@@ -1512,7 +1546,37 @@ figcaption {
   color: #fff;
 }
 
+#fullpage #section-0 .fp-overflow {
+  overflow: hidden;
+}
+
 .fp-watermark {
   display: none;
 }
 
+[data-theme="black"], [data-theme="black"] h2 {
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1600px), 
+       screen and (max-height: 750px) {
+ 
+        .abs-slider-item {
+          bottom: calc(100% - 50vh);
+        }
+
+        #fullpage #section-3 .fp-overflow {
+          overflow: hidden;
+        }
+        .service-list {
+        
+          margin-bottom: 16px;
+      }
+
+      .overlay-card {
+        height: 400px;
+      }
+
+
+}
