@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Lottie from "lottie-react";
-import patternAnimation from "../js/lottie/homepage.json";
-import Footer from "../components/Footer";
-import { callApi } from "../utils/httpreq";
-import URL_LIST from "../constants/url.constants.js";
-import { get } from "jquery";
+
 
 // next arrow
 function SampleNextArrow(props) {
