@@ -1572,8 +1572,7 @@ figcaption {
 }
 
 
-@media screen and (max-width: 1600px), 
-       screen and (max-height: 750px) {
+@media  screen and (max-height: 750px) {
  
         .abs-slider-item {
           bottom: calc(100% - 50vh);

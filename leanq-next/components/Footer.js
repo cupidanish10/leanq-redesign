@@ -8,12 +8,12 @@ const Footer = ()=> {
                 <div className="row flex-100 align-items-center">
                     <div className="col-md-12">
                         <div className="row mb-5">
-                            <div className="col-md-6">
+                            <div className="col-md-8">
                                 <h5>Launching a new business? </h5>
                                 <h2> W<span class="text-brand"><span class="rotate-30">e</span></span>’re currently available to be part of your new adventure </h2>
                             </div>
         
-                            <div className="col-md-6">
+                            <div className="col-md-4">
                                 <div className="d-flex justify-content-end">
                                     <img src="img/d-logo.svg" style={{height:"70px"}} className="img-fluid" alt="" />
                                 </div>
