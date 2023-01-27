@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Lottie from "lottie-react";
 import patternAnimation from "../js/lottie/homepage.json";
@@ -6,20 +6,27 @@ import Footer from "../components/Footer";
 import CategorySlider from "../components/CategorySlider";
 import VerticalScrollElementLayout from "../components/VerticalScrollElementLayout";
 import ReactFullpage from "@fullpage/react-fullpage";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 export default function Home() {
+
+  const [ loading, setLoading ] = useState(false)
+
   useEffect(() => {
     document.body.setAttribute("titles", "Home");
-     AOS.init({
-      disable: 'mobile'
-    });
+   
+    setLoading( true);
 
-      AOS.refresh();
+    setTimeout( ()=> {
+      setLoading(false);
+    }, 8000);
+      
    
   }, []);
 
+
+
   return (
+  
     <ReactFullpage className="hp-section"
     keyboardScrolling= {true}
       onLeave={(origin, destination, direction) => {

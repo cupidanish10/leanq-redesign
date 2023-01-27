@@ -9,9 +9,8 @@ const Footer = ()=> {
                     <div className="col-md-12">
                         <div className="row mb-5">
                             <div className="col-md-6">
-                                <h5>Shall we chat? </h5>
-                                <h2> L<span className="text-brand"><span className="rotate-30">e</span></span>t's talk about your
-                                    product </h2>
+                                <h5>Launching a new business? </h5>
+                                <h2> W<span class="text-brand"><span class="rotate-30">e</span></span>’re currently available to be part of your new adventure </h2>
                             </div>
         
                             <div className="col-md-6">

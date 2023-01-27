@@ -1580,3 +1580,20 @@ figcaption {
 
 
 }
+
+@media (min-width: 1920px) {
+  .work-slider .slick-prev {
+    left: 1220px;
+  }
+
+  .work-slider .slick-next {
+    left: 1260px;
+}
+
+.circle-black #fullpage .abs-slider-item .work-slider .slick-prev{
+  content: url("../public/img/arrow-left-black.svg");
+}
+.circle-black #fullpage .abs-slider-item .work-slider .slick-next {
+  content: url("../public/img/arrow-right-black.svg");
+}
+}
