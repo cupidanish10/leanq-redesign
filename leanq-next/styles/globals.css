@@ -1554,7 +1554,7 @@ figcaption {
   display: none;
 }
 
-[data-theme="black"], [data-theme="black"] h2 {
+[data-theme="black"], [data-theme="black"] h2 , [data-theme="black"] p{
   color: #fff;
 }
 
