@@ -183,7 +183,7 @@ export default function Home({ categories }) {
                             src="img/icons/business-automation.svg"
                             alt="api"
                           />
-                          <h4> Business Process Automation </h4>
+                          <h4> Business Intelligence </h4>
                         </div>
                       </div>
                       <div className="col-md-3 col-6">

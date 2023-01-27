@@ -248,7 +248,7 @@ const About = () => {
               </div>
             </section>
   
-            <Footer className="section hp-footer mobile-bg-dark" />
+            <Footer className="section mobile-bg-dark" />
           </main>
         </VerticalScrollElementLayout>
 

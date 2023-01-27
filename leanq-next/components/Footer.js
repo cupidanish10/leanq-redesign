@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = ()=> {
     return(
         <>
-         <footer id="section-6" data-theme="black" className="section bg-dark footer section">
+         <footer id="section-6" data-theme="black" className="section bg-dark footer section mobile-bg-dark">
             <div className="container">
                 <div className="row flex-100 align-items-center">
                     <div className="col-md-12">
@@ -88,8 +88,8 @@ const Footer = ()=> {
                                                 <img src="img/icons/nepal-flag.svg" alt="" />
                                             </div>
                                           
-                                            <span className="d-block text-grey brand-location"> Kathmandu</span>
-                                            <span className="d-block">+977 9860591288</span>
+                                            <span className="d-block text-grey brand-location"> Sanjay Lamichhane (+977 9860591288) </span>
+                                            {/* <span className="d-block"></span> */}
                                         </li>
                                         <li className="locations">
                                             <div className="d-flex align-items-center">
@@ -97,8 +97,8 @@ const Footer = ()=> {
                                                 <img src="img/icons/australia-flag.svg" alt="" />
                                             </div>
                                             
-                                            <span className="d-block text-grey brand-location"> Griffin, QLD </span>
-                                            <span className="d-block">  +07 38115074 </span>
+                                            <span className="d-block text-grey brand-location"> Amit Sharma ( +07 38115074) </span>
+                                            {/* <span className="d-block">  </span> */}
                                         </li>
         
                                         <li className="locations">
@@ -107,8 +107,8 @@ const Footer = ()=> {
                                                 <img src="img/icons/usa-flag.svg" height="20" alt="" />
                                             </div>
                                            
-                                            <span className="d-block text-grey brand-location"> Texas</span>
-                                            <span className="d-block">+1 832 335 1524</span>
+                                            <span className="d-block text-grey brand-location"> Hari Luitel (+1 832 335 1524) </span>
+                                            {/* <span className="d-block"></span> */}
                                         </li>
         
         
