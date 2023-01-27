@@ -1165,10 +1165,12 @@ figcaption {
 
 @media only screen and (max-width: 979px) {
 
-
+  .fullpage-wrapper  footer.mobile-bg-dark {
+    background: var(--dark)!important;
+  }
 
   .mobile-bg-dark {
-    background: var(--dark);
+    background: var(--dark)!important;
   }
 
   #fullpage .mobile-bg-dark .abs-slider-item h5 {
