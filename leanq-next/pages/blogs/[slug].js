@@ -26,6 +26,8 @@ const BlogDetails = () => {
       },[slug])
      
       console.log("details", details);
+
+      console.log("details", details?.attributes?.description);
   return (
     <NoFullScroll>
         <section
@@ -77,8 +79,8 @@ const BlogDetails = () => {
 
                 </div>
 
-                <div className="blog-content">
-                    {details?.attributes?.description}
+                <div dangerouslySetInnerHTML={{__html: details?.attributes?.description}} className="blog-content">
+                    
                     {/* <p>
                     There are numerous goals which can be achieved with custom illustrations. Title images for blog articles are one of them getting more and more popular from one resource to the other. Original graphics catch readers’ attention and quickly transfer the topic of the post. With extensive experience of creating unique graphics for Tubik Blog articles, our graphic designer Yaroslava Yatsuba shares tips and practices on creating blog illustrations.
                     </p>
